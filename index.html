@@ -9,18 +9,67 @@
 </head>
 <body>
     <header class="cabecalho">
-        
-        <h1 class="logo">MTech</h1>
-        <nav class="nav-links">
-            <a href="#sobre">Sobre</a>
-            <a href="#cobertura">Cobertura</a>
-            <a href="#contato">Orçamentos</a>
-        </nav>
+        <div>
+            <h1 class="logo">MTech</h1>
+            <nav class="nav-links">
+                <a href="#sobre">Sobre</a>
+                <a href="#cobertura">Cobertura</a>
+                <a href="#contato">Orçamentos</a>
+            </nav>
+        </div>
+
     </header>
    
     <main class="conteudo">
 
+        <section class="hero">
+            <div class="container">
+                <h2>Seu IPhone repardo sem você sair de casa</h2>
+                <p class="slogan">Basta agenda que buscamos ou realizamos o reparo no local com total conveniência</p>
+                <button id="cta-principal" class="btn-cta">Quero um Orçamento Gratuito</button>
+            </div>
+        </section>
 
+        <section id="sobre" class="container">
+
+            <h2 class="section-title">Nossos Diferenciais</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>Praticidade Total</h3>
+                    <p>Atendimento focado 100% em delivery. Economize tempo e evite trânsito.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Rapidez na entrega</h3>
+                    <p>A maioria dos reparos de tela e bateria são realizados no mesmo dia</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Garantia de 90 dias</h3>
+                    <p>Utilizamos peças selecionadas de alta performance e ferramentas profissionais</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cobertura" id="cobertura">
+            <div class="container checker-container">
+                <h2 class="section-title">Consulte nossa cobertura</h2>
+                <p>Digite seu CEP para verificar se o nosso delivery atende seu bairro de forma imediata</p>
+                <div class="cep-box">
+                    <input type="text" id="cep-input" maxlength="8" placeholder="Digite apenas numeros">
+                    <button id="btn-buscar-cep">Verificar CEP</button>
+                </div>
+                <div id="resultado-cep" class="resultado-cep-box hidden"></div>
+                    <p><strong>Cidade/UF :</strong><span id="res-cidade">...</span></p>
+                    <p><strong>Bairro :</strong><span id="res-bairro">...</span></p>
+                    <p><strong>Rua :</strong><span id="res-rua">...</span></p>
+                    <div id="status-atendimento" class="status-badge"></div>
+            </div>
+        </section>
+
+        <section id="contato" class="container">
+
+            <h2 class="section-title">Solicite seu atendimento</h2>
+            <p class="section-subtitle">Preencha os campos obrigatórios abaixo para nossa equipe entrar em contato</p>
+        </section>
     </main>
 
     
