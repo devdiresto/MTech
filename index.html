@@ -69,6 +69,24 @@
 
             <h2 class="section-title">Solicite seu atendimento</h2>
             <p class="section-subtitle">Preencha os campos obrigatórios abaixo para nossa equipe entrar em contato</p>
+            <form id="form-contato" class="contact-form">
+                <div class="form-group">
+                    <label for="nome">Nome Completo *</label>
+                    <input type="text" id="nome" required placeholder="Seu nome">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">E-mail *</label>
+                    <input type="email" id="email" required placeholder="seuemail@provedor.com">
+                </div>
+                
+                <div class="form-group">
+                    <label for="mensagem">Mensagem (Modelo do iPhone e Defeito) *</label>
+                    <textarea id="mensagem" required placeholder="Ex: iPhone 11 com tela quebrada, preciso de troca expressa."></textarea>
+                </div>
+                
+                <button type="submit" class="btn-submit">Enviar Solicitação</button>
+            </form>
         </section>
     </main>
 
