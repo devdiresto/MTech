@@ -46,16 +46,33 @@ header {
 }
 
 .header-content {
-    display: flex;
+   display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; /* É isso aqui que garante o alinhamento ao meio */
     padding: 1rem 0;
 }
 
 .logo {
-    font-size: 1.4rem;
-    font-weight: 800;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    line-height: 1;
 }
+.slogan {
+   display: block;
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: #cccccc;
+    letter-spacing: 1px;
+    margin-top: 5px; /* Dá um respiro pequeno entre o mtech e o slogan */
+}
+.nav-links {
+    display: flex;
+    align-items: center; /* Centraliza os links verticalmente */
+    height: 100%; /* Faz o menu ocupar toda a altura disponível do cabeçalho */
+}
+
 
 .nav-links a {
     color: #cccccc;
